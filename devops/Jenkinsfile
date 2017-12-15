@@ -1,0 +1,6 @@
+node {
+	
+	stage ('Preparation Demo Everis') {
+		git 'https://github.com/jorgerisco/spring-boot-calculator-demo.git'
+	}
+}
