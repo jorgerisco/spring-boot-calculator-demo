@@ -3,4 +3,9 @@ node {
 	stage ('Preparation Demo Everis') {
 		git 'https://github.com/jorgerisco/spring-boot-calculator-demo.git'
 	}
+	
+	def mvnHome = "/opt/apache-maven-3.5.0"
+	stage ('Build') {
+		sh "'${mvnHome}/bin/mvn' package"
+	}
 }
